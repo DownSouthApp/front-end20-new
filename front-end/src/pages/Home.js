@@ -77,7 +77,7 @@ const Home = () => {
           <Button
             color="inherit"
             component={Link}
-            to="/projects"
+            to="/services"
             sx={{
               '&:hover': {
                 textDecoration: 'underline',
