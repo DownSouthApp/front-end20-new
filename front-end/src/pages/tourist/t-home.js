@@ -103,15 +103,19 @@ const T_Home = () => {
             <li>
               <Link to="/t_register" className="nav-link">Log out</Link>
             </li>
+            <li>
+              <Link to="/" className="nav-link">Back</Link>
+            </li>
           </ul>
         </nav>
       </Box>
 
       <Box className="main-content">
       <div className="irregular-background"></div>
-        <Button className="open-btn" onClick={toggleNav}>☰</Button>
+        <Button className="open-btn" onClick={toggleNav} backgroundColor={"white"}>☰</Button>
         <Box className="profile-box1" sx={{ p: 2, textAlign: 'center', mb: 2 }}>
-          <Typography variant="h4" className="title" sx={{ mt: 1 }}>{username}</Typography>
+          <Typography variant="h4" backgroundColor={"white"} className="title" sx={{ mt: -1 }}>{username}</Typography>
+          
           <Card variant="outlined" sx={{ mt: 2, p: 1 }}>
             <Typography variant="subtitle1"><strong>Email:</strong> {name}</Typography>
             <Divider sx={{ my: 1 }} />
@@ -120,7 +124,7 @@ const T_Home = () => {
             <Typography variant="subtitle1"><strong>Phone Number:</strong> {phoneNumber}</Typography>
           </Card>
         </Box>
-
+        <Typography > .</Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
           <Button
             variant="contained"
